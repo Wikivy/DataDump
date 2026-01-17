@@ -1,0 +1,2 @@
+ALTER TABLE data_dump
+  MODIFY COLUMN dumps_size BIGINT NOT NULL DEFAULT 0;

@@ -1,0 +1,51 @@
+[
+	{
+		"name": "data_dump",
+		"columns": [
+			{
+				"name": "dumps_filename",
+				"type": "text",
+				"options": {
+					"notnull": true
+				}
+			},
+			{
+				"name": "dumps_size",
+				"type": "bigint",
+				"options": {
+					"default": 0,
+					"unsigned": true,
+					"notnull": true
+				}
+			},
+			{
+				"name": "dumps_status",
+				"type": "string",
+				"options": {
+					"length": 100,
+					"default": "",
+					"notnull": true
+				}
+			},
+			{
+				"name": "dumps_timestamp",
+				"type": "string",
+				"options": {
+					"length": 14,
+					"notnull": true
+				}
+			},
+			{
+				"name": "dumps_type",
+				"type": "text",
+				"options": {
+					"notnull": true
+				}
+			}
+		],
+		"indexes": [
+			{ "name":  "dumps_timestamp", "columns":  ["dumps_timestamp"], "unique": false  }
+		],
+		"pk": []
+	}
+]
